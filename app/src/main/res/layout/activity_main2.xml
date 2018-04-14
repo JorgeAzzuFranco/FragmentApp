@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,6 +12,16 @@
         android:layout_height="wrap_content"
         android:id="@+id/textId"
         android:textSize="24sp"
+        android:layout_centerHorizontal="true"
         android:textColor="#000000"/>
 
-</LinearLayout>
+    <ImageView
+        android:id="@+id/imagenPlanet"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/textId"
+        app:srcCompat="@android:color/background_dark" />
+
+</RelativeLayout>
